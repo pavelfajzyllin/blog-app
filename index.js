@@ -15,8 +15,10 @@ newPostBtnNode.addEventListener('click', function() {   //функция зад�
     addPost(postFromUser);   //  функция сохраняет новый пост в переменную "пост"
 
     renderPosts();   // отображает пост
-
+    cleanInput();
 });
+
+
 postTitleInputNode.addEventListener('input', function(event) {
     validation()
 });
@@ -35,7 +37,6 @@ function validation(){
         return;
     }
     if (textLen > TEXT_VALIDATION_LIMIT) {
-        console.log('s');
         validationMessage.innerText = `Длина текста не должна превышать ${TEXT_VALIDATION_LIMIT} символов`;
         validationMessage.classList.remove('validationMessage_hidden');
         newPostBtnNode.disabled = true;
@@ -57,7 +58,7 @@ function getPostFromUser() {      //title и text из полей ввода п�
 }
 function addPost ({ title, text}) {
     const currentDate = new Date();
-    const dt = `${currentDate.getHours()} : ${currentDate.getMinutes()}`;
+    const dt = `${currentDate.getHours()} : ${currentDate.getUTCMinutes()}`;
     posts.push({
         dt: dt,
         title: title,
@@ -86,6 +87,8 @@ function renderPosts() {
     postsNode.innerHTML = postsHTML;
 }
 
-const data = new Date();
+function cleanInput() {
+    postTitleInputNode.value = '';
+    postTextInputNode.value = '';
+}
 
-console.log(data);
