@@ -1,0 +1,119 @@
+.container{
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+
+}
+h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    margin-bottom: 50px;
+}
+.post{
+    width: 500px;
+    height: 150px;
+}
+.post-title-input{
+    display: block;
+    width: 500px;
+    margin-bottom: 30px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.2);
+
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.post__title{
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.post-text-input {
+    resize: vertical;
+    display: block;
+    width: 500px;
+    height: 250px;
+    margin-bottom: 30px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.2);
+
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.post__text{
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.post{
+    width: 500px;
+}
+.post__date{
+    color: rgb(0, 148, 255);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.new-post-btn{
+    box-sizing: border-box;
+    background: rgb(0, 148, 255);
+    border: none;
+    width: 500px;
+    height: 60px;
+
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.validationMessage{
+    margin-top: 20px;
+    color: red;
+}
+.validationMessage_hidden{
+    display: none;
+}
